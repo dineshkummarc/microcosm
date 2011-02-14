@@ -1,9 +1,23 @@
 var path   = require('path')
   , fs = require('fs')
-  , sys = require('util')
-  , user = require('./lib/User')
-  , scopedClient = require('./lib/ScopedClient');
+  , sys = require('util');
   
+var src = path.join(__dirname, "..", "lib/microcosm")
+  , conf = path.join(__dirname, "..", "conf");
+  
+console.log(path)
+//  , config = require("./data");
+  
+  
+  
+  console.log(path);
+
+console.log(src);
+console.log(conf);
+/*
+
+
+  , user = require('./lib/User');  
 
 
 var DataMap = {
@@ -16,8 +30,11 @@ var DataMap = {
 (function() {
   fs.readFile(DataMap['100'], 'ascii', function (read_error, content) {
     if (read_error) console.log("ERROR: Can't read " + read_error);
+    
     var lines = content.split('\n'); //by line
+    
     lines.forEach(function(line, index) {
+      
       line = line.split(",");
       
       var fullName = line[0];
@@ -35,4 +52,4 @@ var DataMap = {
           });
     });
   });
-})(); 
+})(); */

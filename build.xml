@@ -1,4 +1,4 @@
-<project name="Blast Radius Microcosm" default="help" basedir=".">
+<project name="Microcosm" default="help" basedir=".">
   <property name="ROOT" value="." />
   <property description="Folder for mojo and min target" name="src" value="${ROOT}/lib/microcosm" />
   <property description="Folder for mojo and min target" name="microcosm" value="${ROOT}/bin/microcosm.js" />
@@ -13,7 +13,14 @@
   <target name="start">
     <echo>Starting Microcosm...</echo>
     <exec executable="/usr/local/bin/node" failonerror="true"> 
-      <arg line="${microcosm}"/> 
+      <arg line="${microcosm} start"/> 
+    </exec>
+  </target>
+  
+  <target name="stop">
+    <echo>Stopping Microcosm...</echo>
+    <exec executable="/usr/local/bin/node" failonerror="true"> 
+      <arg line="${microcosm} stop"/> 
     </exec>
   </target>
   
