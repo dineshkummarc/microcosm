@@ -15,7 +15,7 @@ Microcosm is a social network simulator tool that allows your clients to see how
 
 (The MIT License)
 
-Copyright (c) 2010 Jaime Bueza
+Copyright (c) 2011 Jaime Bueza
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
