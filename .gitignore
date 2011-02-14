@@ -1,0 +1,9 @@
+.svn
+.DS_Store
+Thumbs.db
+.settings
+*~
+*.diff
+*.patch
+.sass-cache/*
+dist/*

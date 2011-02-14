@@ -1,0 +1,12 @@
+{
+    "name": "Microcosm"
+  , "description": "Social Network Simulator Tool"
+  , "version": "0.1"
+  , "author": "Jaime Bueza <jbueza@gmail.com>"
+  , "keywords": ["simulator", "social network"]
+  , "dependencies": {}
+  , "directories": { "lib": "./lib/microcosm" }
+  , "scripts": { "test": "make test" }
+  , "main": "./index.js"
+  , "engines": { "node": ">= 0.3.0" }
+}
