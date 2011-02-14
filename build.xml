@@ -1,0 +1,27 @@
+<project name="Blast Radius Microcosm" default="help" basedir=".">
+  <property name="ROOT" value="." />
+  <property description="Folder for mojo and min target" name="src" value="${ROOT}/lib/microcosm" />
+  <property description="Folder for mojo and min target" name="microcosm" value="${ROOT}/bin/microcosm.js" />
+
+  <target name="all" depends="" />
+
+  
+  <target name="help">
+    <echo>Available Commands: start, stop, doc</echo>
+  </target>
+  
+  <target name="start">
+    <echo>Starting Microcosm...</echo>
+    <exec executable="/usr/local/bin/node" failonerror="true"> 
+      <arg line="${microcosm}"/> 
+    </exec>
+  </target>
+  
+  <target name="doc">
+    <echo>Generating documentation...</echo>
+    <exec executable="/usr/local/bin/node" failonerror="true"> 
+      <arg line="${docgen}"/> 
+    </exec>
+  </target>
+
+</project>
