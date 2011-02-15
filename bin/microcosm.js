@@ -9,12 +9,6 @@ var src = path.join(__dirname, "..", "lib/microcosm")
 
 //var engine = new SimulationEngine();
 
-var data = {
-  "facebookId": '3324234',
-  "fullName": "adsfdfd Bueza",
-  "email": "adsfdfddd@gmail.com"
-};
-
 
 var baseUrl = "http://glaucous.bluehq.bluemodus.com/Bacardi/WebServices/UserService.asmx/CreateUser";
 
@@ -35,7 +29,7 @@ var client = new httpClient.httpclient();
 
 
 //(function() {
-  fs.readFile(DataMap['10k'], 'ascii', function (read_error, content) {
+  fs.readFile(DataMap['20k'], 'ascii', function (read_error, content) {
     if (read_error) console.log("ERROR: Can't read " + read_error);
     
     var lines = content.split('\n'); //by line
