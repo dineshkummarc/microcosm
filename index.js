@@ -4,4 +4,4 @@
  *
  */
 
-module.exports = require('./lib/microcosm/');
+module.exports = require('./lib/microcosm/Microcosm');
