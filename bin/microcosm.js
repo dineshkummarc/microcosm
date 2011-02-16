@@ -1,7 +1,8 @@
 var engine = require('../')();
 
 engine
-  .configure('dataSource', 'csv')
+  .configure('dataType', 'csv')
+  .configure('dataSource', __dirname + '/../data/csv/100_users.csv')
   
   
   .start();
