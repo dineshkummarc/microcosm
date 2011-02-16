@@ -14,3 +14,5 @@ var ServiceLocator = {
     this.services = {}; 
   }
 };
+
+exports.ServiceLocator = ServiceLocator;

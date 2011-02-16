@@ -1,6 +1,27 @@
+
+
+require.paths.unshift(__dirname + '/../lib');
+require.paths.unshift(__dirname + '/../conf');
+require.paths.unshift(__dirname + '/../support/httpclient');
 var path = require('path')
   , fs = require('fs')  
   , sys = require('util');
+
+
+console.log(require.paths)
+require('SimulationEngine');
+var httpClient = require("HttpClient");
+
+
+
+var engine = new SimulationEngine();
+
+
+engine
+  .configure('ServiceLocator', new ServiceLocator());
+  
+  
+  /*
 
 var src = path.join(__dirname, "..", "lib/microcosm")
   , conf = path.join(__dirname, "..", "conf")
@@ -27,8 +48,6 @@ var DataMap = {
 
 var client = new httpClient.httpclient();
 
-
-//(function() {
   fs.readFile(DataMap['20k'], 'ascii', function (read_error, content) {
     if (read_error) console.log("ERROR: Can't read " + read_error);
     
@@ -47,28 +66,10 @@ var client = new httpClient.httpclient();
         "email": email 
       };
       
-
-      // a simple http request with default options (gzip off, keepalive off, https off)
       client.perform(baseUrl, "POST", function(result) {
         console.log(data.email + " inserted.");
       }, JSON.stringify(data), { 'Content-Type': 'application/json', accept: 'application/json' });
 
     });
   });
-//})();
-
-  
-
-/*
-
-
-  , user = require('./lib/User');  
-
-
-var DataMap = {
-    '100': path.join(__dirname, '100_users.csv')
-  , '20k': path.join(__dirname, '20000_users.csv')
-  , '500k': path.join(__dirname, '500000_users.csv')
-  , '1million': path.join(__dirname, '1000000_users.csv')
-};
- */
+*/
