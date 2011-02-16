@@ -7,3 +7,6 @@ Thumbs.db
 *.patch
 .sass-cache/*
 dist/*
+
+conf/ServiceMap.js
+conf/DataMap.js
