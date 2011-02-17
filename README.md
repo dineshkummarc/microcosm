@@ -6,14 +6,23 @@ To run the Simulation Engine, invoke it like this and pass a directory as an arg
 
 <pre><code>node bin/microcosm.js examples/</code></pre>
 
+Note: Please do not use for production use, as I am still taking feedback from several mentors/friends! If you have any feedback
+on how the engine will use gherkin lexicon to dictate how the simulation engine behaves, please feel free to reach
+out to me at [jbueza@gmail.com](mailto:jbueza@gmail.com).
+
+Cheers and thanks,
+Jaime
+
 ## Data Bindings
 
+* CSV - Allows your social network to be full of users based on CSV data
 * JSON - Allows your social network to be full of users based on JSON data
 * Facebook - Allows your social network to be full of users from Facebook (generated users)
   * Opens up simulated Check Ins API
   * Opens up simulated Like API
   * and more!
-  
+* LinkedIn
+* Twitter
 
 ## License 
 
