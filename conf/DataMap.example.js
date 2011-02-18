@@ -6,3 +6,5 @@ var DataMap = {
   , '500k': path.join(__dirname, '/../data/csv/500000_users.csv')
   , '1mil': path.join(__dirname, '/../data/csv/1000000_users.csv')
 };
+
+exports.DataMap = DataMap;

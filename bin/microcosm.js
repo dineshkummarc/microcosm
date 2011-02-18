@@ -1,8 +1,11 @@
-var engine = require('../')();
-
-engine
-  .configure('dataType', 'csv')
-  .configure('dataSource', __dirname + '/../data/csv/100_users.csv')
+var engine = require('../')()
+  , dataMap = require('../conf/DataMap.js').DataMap
+  , serviceMap = require('../conf/ServiceMap.js').ServiceMap;
   
+engine
+  .configure('dataType', 'csv') //not really used yet! should be able to specify "Facebook" as well
+  .configure('data', dataMap)
+  .configure('dataSet', '100')
+  .configure('services', serviceMap)
   
   .start();
