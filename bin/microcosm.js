@@ -5,7 +5,7 @@ var engine = require('../')()
 engine
   .configure('dataType', 'csv') //not really used yet! should be able to specify "Facebook" as well
   .configure('data', dataMap)
-  .configure('dataSet', '100')
+  .configure('dataSet', '2')
   .configure('services', serviceMap)
   
   .start();
