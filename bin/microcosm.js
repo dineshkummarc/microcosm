@@ -3,9 +3,9 @@ var engine = require('../')()
   , serviceMap = require('../conf/ServiceMap.js').ServiceMap;
   
 engine
-  .configure('dataType', 'bta') //not really used yet! should be able to specify "Facebook" as well
+  .configure('dataType', 'csv') //not really used yet! should be able to specify "Facebook" as well
   .configure('data', dataMap)
-  .configure('dataSet', '2')
+  .configure('dataSet', '20k')
   .configure('services', serviceMap)
   
   .start();
