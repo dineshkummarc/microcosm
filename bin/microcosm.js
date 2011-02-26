@@ -31,22 +31,22 @@ var cmd = argv[0].split(':');
 switch (cmd[0]) {
   case 'user': 
       (function() {
-        console.log("User Package!");
+        console.log("---> Loading [ User ]");
+        engine
+          .configure('dataType', 'csv') //not really used yet! should be able to specify "Facebook" as well
+          .configure('data', dataMap)
+          .configure('dataSet', '10k')
+          .configure('services', serviceMap);
       })();
       break;
       
   case 'simulator':
       (function()  {
-        console.log("Loading simulator");
+        console.log("---> Loading [ Simulator ]");
         engine
           .configure('dataType', 'bta') //not really used yet! should be able to specify "Facebook" as well
           .configure('data', dataMap)
-          .configure('dataSet', '100')
-          .configure('services', serviceMap)  
-          
-        ;
-        
-          //.start();
+          .configure('services', serviceMap);          
       })();
   
       
@@ -58,6 +58,8 @@ switch (cmd[0]) {
     process.exit(1);
     
 }
+
+  engine.start();
 
 
 
