@@ -6,8 +6,8 @@ To run the Simulation Engine, invoke it like this and pass a directory as an arg
 
 <pre>
   Blast Radius: PROJECT MICROCOSM by @jbueza
-  Usage: microcosm <command>
-  where <command> is one of:
+  Usage: microcosm &lt;command&gt;
+  where &lt;command&gt; is one of:
   	 user:create, user:delete
   	 simulator:follow, simulator:unfollow, simulator:random
   	 simulator:like, simulator:vote, simulator:view, simulator:share
