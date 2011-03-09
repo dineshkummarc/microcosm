@@ -1,11 +1,4 @@
-var engine = require('../')()
-  , dataMap = require('../conf/DataMap.js').DataMap
-  , serviceMap = require('../conf/ServiceMap.js').ServiceMap
-  , log = console.log;
-
-
-var arg, args = [], argv = process.argv.slice(2);
-
+var log = console.log, arg, args = [], argv = process.argv.slice(2);
 
 function usage() {
   log([ ''
@@ -24,7 +17,9 @@ if (!argv.length) {
   process.exit(1);
 } 
 
-
+var engine = require('../')()
+  , dataMap = require('../conf/DataMap.js').DataMap
+  , serviceMap = require('../conf/ServiceMap.js').ServiceMap;
 
 var cmd = argv[0].split(':');
 
@@ -60,14 +55,3 @@ switch (cmd[0]) {
 }
 
   engine.start();
-
-
-
-  /*
-engine
-  .configure('dataType', 'bta') //not really used yet! should be able to specify "Facebook" as well
-  .configure('data', dataMap)
-  .configure('dataSet', '100')
-  .configure('services', serviceMap)
-  
-  .start();*/
