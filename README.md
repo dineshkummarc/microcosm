@@ -2,7 +2,7 @@
 
 Microcosm is a social network simulator tool that allows your clients to see how well the social network you're trying to build scales with millions of users, millions of likes, millions of follows/unfollows.
 
-To run the Simulation Engine, invoke it like this and pass a directory as an argument: <code>node bin/microcosm.js user:create</code> or <code>node bin/microcosm.js simulator:follow</code>
+To run the Simulation Engine, invoke it like this: <code>node bin/microcosm.js user:create</code> or <code>node bin/microcosm.js simulator:follow</code>
 
 <pre>
   Blast Radius: PROJECT MICROCOSM by @jbueza
@@ -31,6 +31,11 @@ Jaime
   * and more!
 * LinkedIn
 * Twitter
+
+## TODO
+
+* npm package-ify this using ngen
+* tests
 
 ## License 
 
