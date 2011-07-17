@@ -2,10 +2,7 @@ var path = require('path')
   , fs = require('fs')  
   , sys = require('util');
   
-  
   var people = [];
-  
-  
 fs.readFile(__dirname + '/data/csv/5000_users.csv', 'ascii', function (read_error, content) {
     
    var lines = content.split('\n'); //by line
@@ -21,13 +18,9 @@ fs.readFile(__dirname + '/data/csv/5000_users.csv', 'ascii', function (read_erro
       
       people.push(data);
 
-    });
-      
-
-
-
-    var o = sys.inspect(people);
-  
+    });    
+    
+  var o = sys.inspect(people);
   fs.writeFileSync(__dirname + '/data/json/5000_users.json', o);
   
 });
